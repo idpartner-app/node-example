@@ -1,4 +1,4 @@
-# rp-example
+# Intro
 Example of a nodejs RP client
 
 # Install
