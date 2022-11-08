@@ -1,5 +1,5 @@
 {
-  "name": "rp-dogfooding",
+  "name": "@idpartner/node-example",
   "version": "0.0.0",
   "private": true,
   "scripts": {
