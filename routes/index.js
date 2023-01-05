@@ -32,7 +32,6 @@ router.get('/auth', async (req, res, next) => {
   const scope = ['openid', 'email', 'profile'];
   req.session.idp_proofs = idPartnerClient.generateProofs();
   req.session.issuer = req.query.iss;
-  req.session.saved_provider_id = req.query.saved_provider_id;
   const authorizationUrl = await idPartnerClient.getAuthorizationUrl(req.query, req.session.idp_proofs, scope);
   return res.redirect(authorizationUrl);
 });
